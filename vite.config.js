@@ -11,8 +11,8 @@ export default defineConfig({
       remotes: {
         layoutMfe: "http://localhost:5001/assets/remoteEntry.js",
         authMfe: "http://localhost:5002/assets/remoteEntry.js",
-        userMfe: "http://localhost:5003/assets/remoteEntry.js",
-        formbuilderMfe: "http://localhost:5004/assets/remoteEntry.js",
+        // userMfe: "http://localhost:5003/assets/remoteEntry.js",
+        // formbuilderMfe: "http://localhost:5004/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),

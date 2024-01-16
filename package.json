@@ -1,5 +1,5 @@
 {
-  "name": "ecom-container-mfe",
+  "name": "container-mfe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "pre": "vite build && vite preview --port=5000 --strictPort"
+    "pre": "vite build && vite preview --port=5000 --strictPort",
+    "in":"pnpm install"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
