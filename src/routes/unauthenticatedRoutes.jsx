@@ -6,7 +6,7 @@ const UnAuthenticatedRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth/*" Component={AuthMfe} />
+        <Route path="/auth" Component={AuthMfe} />
         <Route path="/*" element={<Navigate to="/auth/login" replace />} />
       </Routes>
     </BrowserRouter>
