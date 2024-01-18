@@ -11,10 +11,10 @@ const local = {
   formbuilderMfe: "http://localhost:5004/assets/remoteEntry.js",
 };
 const production = {
-  layoutMfe: "https://github.com/micro-frontend-and-micro-services/layout-mfe/assets/remoteEntry.js",
-  authMfe: "https://github.com/micro-frontend-and-micro-services/auth-mfe/assets/remoteEntry.js",
-  dashboardMfe: "https://github.com/micro-frontend-and-micro-services/dashboard-mfe/assets/remoteEntry.js",
-  formbuilderMfe: "https://github.com/micro-frontend-and-micro-services/formbuilder-mfe/assets/remoteEntry.js",
+  layoutMfe: "https://layout-mfe.vercel.app/assets/remoteEntry.js",
+  authMfe: "https://dashboard-mfe-neon.vercel.app/assets/remoteEntry.js",
+  dashboardMfe: "https://dashboard-mfe-neon.vercel.app/assets/remoteEntry.js",
+  formbuilderMfe: "https://formbuilder-mfe.vercel.app/assets/remoteEntry.js",
 };
 
 // https://vitejs.dev/config/
