@@ -1,13 +1,15 @@
-import { BrowserRouter,  Route, Routes } from 'react-router-dom';
-import AuthMfe from "authMfe/app";
-import { Navigate } from 'react-router-dom';
+import { BrowserRouter,   Routes } from 'react-router-dom';
+// import LoginPage from "authMfe/login";
+// import VerifyOTPPage from "authMfe/verifyOTP";
+// import { Navigate } from 'react-router-dom';
 
 const UnAuthenticatedRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth/*" Component={AuthMfe} />
-        <Route path="/*" element={<Navigate to="/auth/login" replace />} />
+        {/* <Route path="/verify-otp" Component={VerifyOTPPage} />
+        <Route path="/login" Component={LoginPage} />
+        <Route path="/*" element={<Navigate to="/login" replace />} /> */}
       </Routes>
     </BrowserRouter>
   );
