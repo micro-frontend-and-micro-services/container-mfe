@@ -1,13 +1,11 @@
 import Layout from "layoutMfe/app";
+import Router from "./router";
 
-import { Routes } from "./routes";
-// import UserMfe from "userMfe/App";
-// import FormbuilderMfe from "formbuilderMfe/App";
 
 function App() {
   return (
     <Layout>
-      <Routes/>
+      <Router/>
     </Layout>
   );
 }
