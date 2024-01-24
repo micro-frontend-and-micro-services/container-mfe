@@ -4,6 +4,7 @@ import LoginPage from "authMfe/login";
 import VerifyOTPPage from "authMfe/verifyOTP";
 import DashboardPage from "dashboardMfe/app";
 import CreateTemplatePage from "formbuilderMfe/createTemplatePage";
+import TemplatePage from "formbuilderMfe/templatePage";
 import FormsPage from "formbuilderMfe/formsPage";
 import UsersPage from "userMfe/app";
 
@@ -20,6 +21,8 @@ const Router = () => {
         <Route path="/forms" element={<FormsPage />} />
 
         <Route path="/users" element={<UsersPage />} />
+
+        <Route path="/templates" element={<TemplatePage />} />
 
         <Route path="/create-template" element={<CreateTemplatePage />} />
 
