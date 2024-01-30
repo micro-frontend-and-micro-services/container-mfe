@@ -2,24 +2,25 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import federation from "@originjs/vite-plugin-federation";
 
+const localUrl = (port) => `http://localhost:${port}/assets/remoteEntry.js`;
+
 const prod = false;
 
 const local = {
-  layoutMfe: "http://localhost:5001/assets/remoteEntry.js",
-  authMfe: "http://localhost:5002/assets/remoteEntry.js",
-  dashboardMfe: "http://localhost:5003/assets/remoteEntry.js",
-  formbuilderMfe: "http://localhost:5004/assets/remoteEntry.js",
-  userMfe: "http://localhost:5005/assets/remoteEntry.js",
+  layoutMfe: localUrl(5001),
+  authMfe: localUrl(5002),
+  dashboardMfe: localUrl(5003),
+  formbuilderMfe: localUrl(5004),
+  userMfe: localUrl(5005),
 };
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     federation({
       name: "container",
       remotes: prod ? production : local,
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],
   build: {
