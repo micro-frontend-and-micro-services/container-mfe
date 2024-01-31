@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "authMfe/login";
 import VerifyOTPPage from "authMfe/verifyOTP";
 import DashboardPage from "dashboardMfe/app";
-import UserListPage from "userMfe/app";
 
+import UserListPage from "userMfe/UserListPage";
 import TemplateListPage from "formbuilderMfe/TemplateListPage";
 import FormListPage from "formbuilderMfe/FormListPage";
 import CreateTemplatePage from "formbuilderMfe/CreateTemplatePage";
