@@ -9,6 +9,8 @@ import TemplateListPage from "formbuilderMfe/TemplateListPage";
 import FormListPage from "formbuilderMfe/FormListPage";
 import CreateTemplatePage from "formbuilderMfe/CreateTemplatePage";
 import CreateFormPage from "formbuilderMfe/CreateFormPage";
+import UpdateTemplatePage from "formbuilderMfe/UpdateTemplatePage";
+import UpdateFormPage from "formbuilderMfe/UpdateFormPage";
 
 const Dashboard=DashboardPage?DashboardPage:<div>loading</div>
 
@@ -31,6 +33,10 @@ const Router = () => {
         <Route path="/create-form" element={<CreateFormPage />} />
 
         <Route path="/create-template" element={<CreateTemplatePage />} />
+
+        <Route path="/update-form" element={<UpdateFormPage />} />
+
+        <Route path="/update-template" element={<UpdateTemplatePage />} />
 
         <Route path="/*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
