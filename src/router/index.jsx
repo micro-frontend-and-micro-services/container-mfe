@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "authMfe/login";
 import VerifyOTPPage from "authMfe/verifyOTP";
 import DashboardPage from "dashboardMfe/app";
+import SubmittedFormListPage from "dashboardMfe/SubmittedFormList";
 
 import UserListPage from "userMfe/UserListPage";
 import TemplateListPage from "formbuilderMfe/TemplateListPage";
@@ -37,6 +38,8 @@ const Router = () => {
         <Route path="/update-form" element={<UpdateFormPage />} />
 
         <Route path="/update-template" element={<UpdateTemplatePage />} />
+
+        <Route path="/submitted-form" element={<SubmittedFormListPage />} />
 
         <Route path="/*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
